@@ -10,7 +10,7 @@ class Link < ActiveRecord::Base
 
 	def self.set_short_url how_long
 		char = (0..how_long-1).map { (65+rand(26)).chr}.join
-		self.short_url = char
+		short_url = char
 	end
 
 end

@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Link.create(original_url: 'http://ohmyweekpage.com/something', short_url:'345')
+
+Link.create(original_url: 'http://google.com', short_url: Link.set_short_url(3))
