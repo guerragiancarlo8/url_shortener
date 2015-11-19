@@ -5,4 +5,9 @@ class LinksController < ApplicationController
 		 redirect_to url
 
 	end
+
+	def test
+		link = Link.set_short_url(3)
+		puts link
+	end
 end
